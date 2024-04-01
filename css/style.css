@@ -5,7 +5,7 @@ Fonts
 /* ---------------
 Variables
 ----------------- */
-:root {
+/* :root {
     --main-color: #e02f6b;
     --blue: #0000ff;
     --blue-dark: #18293c;
@@ -17,20 +17,21 @@ Variables
     --white-alpha-40: rgba(255, 255, 255, 0.40);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
     --backdrop-filter-blur: blur(5px);
-}
-/* :root {
-    --main-color: #331D2C;
-    --blue: #F7E987;
-    --blue-dark: #fbde00;
-    --orange: #ffa500;
-    --green-yellow: #A78295;
-    --pink-light: #4E4FEB;
-    --cyan-light: #B0D9B1;
+} d90429*/
+:root {
+    --main-color: #0d0c1d;
+    --blue: #6868f4;
+    --blue-dark: #ffffff;
+    --orange: #f77f00;
+    --green-yellow: #cddc39;
+    --pink-light: #000000;
+    --cyan-light: #14213d;
+    --deep-pink: #d90429;
     --white: #ffffff;
     --white-alpha-40: rgba(255, 255, 255, 0.40);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
     --backdrop-filter-blur: blur(5px);
-} */
+}
 
 /* --------------
 Global Settings
@@ -268,7 +269,7 @@ button {
 .bg-circles .circle-2 {
     height: 80px;
     width: 80px;
-    background-color: var(--main-color);
+    background-color: var(--deep-pink);
     left: 30%;
     top: 50%;
     opacity: 0.4;
@@ -337,19 +338,19 @@ button {
 .page-loader div:nth-child(1) {
     height: 70px;
     width: 70px;
-    border-color: var(--main-color);
+    border-color: var(--deep-pink);
     animation-delay: 0s;
 }
 .page-loader div:nth-child(2) {
     height: 50px;
     width: 50px;
-    border-color: var(--blue);
+    border-color: var(--deep-pink);
     animation-delay: 0.25s;
 }
 .page-loader div:nth-child(3) {
     height: 35px;
     width: 35px;
-    border-color: var(--orange);
+    border-color: var(--deep-pink);
     animation-delay: 0.5s;
 }
 
@@ -505,14 +506,20 @@ Home Section
     padding: 15px;
 }
 .home-text p {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 200;
 }
 .home-text h1 {
     font-size: 50px;
     text-transform: capitalize;
+    background-image: url("https://i.pinimg.com/originals/21/f1/1c/21f11c0a5364a224e21a311c8964a425.gif");
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
 }
 .home-text h2 {
-    font-size: 20px;
+    font-size: 22px;
     text-transform: capitalize;
     font-weight: 300;
     margin: 0 0 30px;
