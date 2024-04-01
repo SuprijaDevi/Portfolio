@@ -344,13 +344,13 @@ button {
 .page-loader div:nth-child(2) {
     height: 50px;
     width: 50px;
-    border-color: var(--deep-pink);
+    border-color: var(--orange);
     animation-delay: 0.25s;
 }
 .page-loader div:nth-child(3) {
     height: 35px;
     width: 35px;
-    border-color: var(--deep-pink);
+    border-color: var(--white);
     animation-delay: 0.5s;
 }
 
@@ -513,7 +513,7 @@ Home Section
     font-size: 50px;
     text-transform: capitalize;
     background-image: url("https://i.pinimg.com/originals/21/f1/1c/21f11c0a5364a224e21a311c8964a425.gif");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     color: transparent;
     background-clip: text;
