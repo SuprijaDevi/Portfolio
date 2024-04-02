@@ -1,4 +1,26 @@
 
+/* ------------ Custom Cursor ------------- */
+let colors = ["white","pink"];
+let i = 0;
+document.onmousemove = function(e) {
+    i++;
+    let x = e.pageX;
+    let y = e.pageY;
+
+    let spann = document.createElement("span");
+    spann.classList.add("follower");
+    spann.style.top = y + "px";
+    spann.style.left = x + "px";
+    spann.style.backgroundColor = colors[i-1];
+    document.body.appendChild(spann);
+    if(i == colors.length) {
+        i = 0;
+    }
+    setTimeout(() => {
+        spann.remove();
+    }, 1000);
+}
+
 window.addEventListener("load", () =>{
     document.querySelector(".main").classList.remove("hidden");
     document.querySelector(".home-section").classList.add("active");

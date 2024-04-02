@@ -134,8 +134,21 @@ section.fade-out {
     justify-content: flex-end;
 }
 
-/* Section Title */
+/*Custom Scrollbar*/
+.follower {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    pointer-events: none;
+    border-radius: 50%;
+    opacity: 0;
+    animation-name: follower_animation;
+    animation-duration: 0.8s;
+}
 
+/* Section Title */
 .section-title {
     padding:0 15px;
     width: 100%;
@@ -146,6 +159,7 @@ section.fade-out {
     font-size: 40px;
     text-transform: capitalize;
 }
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 5px;
@@ -199,6 +213,16 @@ button {
 }
 
 /* Animation Keyframes */
+@keyframes follower_animation {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -350,7 +374,7 @@ button {
 .page-loader div:nth-child(3) {
     height: 35px;
     width: 35px;
-    border-color: var(--white);
+    border-color: var(--deep-pink);
     animation-delay: 0.5s;
 }
 
@@ -512,11 +536,11 @@ Home Section
 .home-text h1 {
     font-size: 50px;
     text-transform: capitalize;
-    background-image: url("https://i.pinimg.com/originals/21/f1/1c/21f11c0a5364a224e21a311c8964a425.gif");
+    /* background-image: url("https://i.pinimg.com/originals/21/f1/1c/21f11c0a5364a224e21a311c8964a425.gif");
     background-size: cover;
     background-position: center;
     color: transparent;
-    background-clip: text;
+    background-clip: text; */
 }
 .home-text h2 {
     font-size: 22px;
